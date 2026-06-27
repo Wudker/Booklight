@@ -1,0 +1,12 @@
+﻿Badanie Analiza statyczna:1 rozpoczęte: 15.05.2026, 22:42:40
+Liczba konfiguracji: 1
+Siatka domyślna: Elementy 23649, Węzły 43031
+Model dzieli się na następującą liczbę niezależnych komponentów: 3
+Dodano miękką sprężynę
+Odkształcenie jest duże w stosunku do rozmiaru modelu. Sprawdź, czy ustawienia obciążenia i wiązań zostały odpowiednio wyskalowane.
+Czas rozwiązania 2s
+Wskaźnik zbieżności: 50%
+Osiągnięto całkowitą liczbę wygładzeń h 
+Badanie        Worst Jacobian ratio :  1.04  on element 346 zakończone: 15.05.2026, 22:42:47
+Czas całkowity 0:00:07
+
