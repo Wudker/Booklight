@@ -19,6 +19,7 @@ The device is intended to provide simple local illumination for reading in low-l
 Working prototype.
 
 Future improvements:
-* improved LED diffuser,
 * redesigned 3D printed spring and enclosure,
 * more ergonomic clip mechanism.
+
+![Prototype](Prototype/Hardware/Photo/booklight.jpg)
