@@ -1,25 +1,13 @@
 # BookLight
 
-## Description
-
-BookLight Clip is a compact LED reading light designed to be attached directly to a book.
-The device is intended to provide simple local illumination for reading in low-light conditions without using a large desk lamp.
-
-
-## Features
-
-* Compact clip-on design
-* LED-based page illumination
-* Lightweight mechanical structure
-* Print-in-place clip
-* Easy attachment to a book cover or pages
-
-
-## Status
-Working prototype.
-
-Future improvements:
-* redesigned 3D printed spring and enclosure,
-* more ergonomic clip mechanism.
-
 ![Prototype](Prototype/Hardware/Photo/booklight.jpg)
+
+BookLight is a compact clip-on LED lamp designed for reading in low-light conditions. Its lightweight, print-in-place structure can be attached directly to a book cover or pages, providing local illumination without a larger desk lamp. The project combines a simple LED circuit with a custom 3D-printed clip and spring mechanism.
+
+## Technologies
+
+`LED lighting` `CAD` `3D printing` `Print-in-place design` `Mechanical prototyping`
+
+## Usage and development status
+
+Attach the clip to the book cover or a small group of pages and position the LED above the reading area. The current version is a functional prototype. Future improvements include a redesigned printed spring, a more ergonomic clip mechanism and a refined enclosure.
