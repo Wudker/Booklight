@@ -709,7 +709,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Comparator:LM397"
+		(symbol "Comparator:TLV7041DBV"
 			(pin_names
 				(offset 0.127)
 			)
@@ -719,49 +719,29 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
-				(at 1.27 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "LM397"
-				(at 3.81 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-				(at 1.27 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm397.pdf"
 				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
-				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Description" "Single General-Purpose Voltage Comparator with Open-Collector Output, SOT-23-5"
-				(at 0 0 0)
+			(property "Value" "TLV7041DBV"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -771,7 +751,31 @@
 					)
 				)
 			)
-			(property "ki_keywords" "single comparator"
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv7041.pdf"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" "Single, 1.6V-6.5V, 315nA Quiescent, Open-Drain Output, Comparator, North-west pinout, SOT-23-5"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "cmp collector"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -793,7 +797,7 @@
 					)
 				)
 			)
-			(symbol "LM397_0_1"
+			(symbol "TLV7041DBV_0_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -806,24 +810,17 @@
 						(type background)
 					)
 				)
-			)
-			(symbol "LM397_1_1"
-				(pin input line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+				(polyline
+					(pts
+						(xy 3.302 -0.508) (xy 2.794 -0.508) (xy 3.302 0) (xy 2.794 0.508) (xy 2.286 0) (xy 2.794 -0.508)
+						(xy 2.286 -0.508)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(pin power_in line
@@ -837,6 +834,44 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TLV7041DBV_1_1"
+				(pin open_collector line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -862,10 +897,10 @@
 						)
 					)
 				)
-				(pin open_collector line
-					(at 7.62 0 180)
+				(pin input line
+					(at -7.62 -2.54 0)
 					(length 2.54)
-					(name ""
+					(name "-"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -873,24 +908,6 @@
 						)
 					)
 					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 7.62 270)
-					(length 3.81)
-					(name "V+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6456,7 +6473,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0372ecc7-85a2-4029-a4b2-703efbba8da2")
-		(property "Reference" "R16"
+		(property "Reference" "R10"
 			(at 213.36 135.89 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6518,7 +6535,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "R16")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -6536,7 +6553,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "099a6096-1671-4e8a-8a42-fc06a5d1d1ed")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR06"
 			(at 69.85 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -6596,7 +6613,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "#PWR039")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -6614,7 +6631,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ddc668b-a095-4438-8b62-29b6dc24dffb")
-		(property "Reference" "R17"
+		(property "Reference" "R9"
 			(at 146.05 64.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6678,7 +6695,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "R17")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -6695,7 +6712,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0e36e491-24eb-4cc7-a29a-d6885f8149c0")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR020"
 			(at 238.76 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -6755,7 +6772,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "#PWR021")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -6773,7 +6790,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "10a061f0-d747-4f4d-81c2-a107a82203dd")
-		(property "Reference" "C11"
+		(property "Reference" "C5"
 			(at 228.6 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6837,7 +6854,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "C11")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -6854,7 +6871,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "178f7fd2-6875-4961-a056-69a90e196403")
-		(property "Reference" "C8"
+		(property "Reference" "C1"
 			(at 30.48 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6918,7 +6935,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "C8")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -6936,7 +6953,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19c484ff-adcb-4f38-af6c-97144687e562")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR05"
 			(at 66.04 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -6996,7 +7013,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "#PWR023")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -7013,7 +7030,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1c5e4c21-2e87-437c-90e3-dac247e330af")
-		(property "Reference" "C19"
+		(property "Reference" "C8"
 			(at 267.716 79.502 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7077,7 +7094,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "C19")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -7435,7 +7452,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "32cda95a-51b8-4cb0-b658-7c47004dcb81")
-		(property "Reference" "R19"
+		(property "Reference" "R7"
 			(at 105.41 173.9899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7499,7 +7516,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "R19")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -7517,7 +7534,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3fbb65bf-b6a9-4c5a-afe8-1d7873a1ba7b")
-		(property "Reference" "R15"
+		(property "Reference" "R8"
 			(at 114.3 49.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7581,7 +7598,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "R15")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -7598,7 +7615,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "40a4b6fc-ff9f-48c9-bd48-1c7e02b6b130")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR011"
 			(at 100.33 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -7658,7 +7675,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "#PWR013")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -7676,7 +7693,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4126048f-3794-4f32-90aa-fc10ccc238bb")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR02"
 			(at 40.64 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -7736,7 +7753,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "#PWR011")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -7754,7 +7771,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "424d4b2d-04bc-4f2e-85db-e56c5d3e5e36")
-		(property "Reference" "R11"
+		(property "Reference" "R3"
 			(at 68.58 58.4199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7765,7 +7782,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "2k"
 			(at 68.58 60.9599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7818,7 +7835,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "R11")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -7836,7 +7853,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4848b97b-6017-4e02-a8da-7e9e69675acf")
-		(property "Reference" "R14"
+		(property "Reference" "R6"
 			(at 95.25 173.9899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7900,7 +7917,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "R14")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -7918,7 +7935,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "505d8867-e538-48a5-afc6-0e2b7eba8276")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR04"
 			(at 58.42 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -7978,7 +7995,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "#PWR018")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -7996,7 +8013,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "530300fe-4275-4e16-9153-6c3ee6ea3689")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR07"
 			(at 76.2 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -8056,7 +8073,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "#PWR024")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -8074,7 +8091,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5949c0e3-6867-4da1-a37e-4b95a5041c3a")
-		(property "Reference" "U3"
+		(property "Reference" "U2"
 			(at 128.27 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8148,7 +8165,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "U3")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -8165,7 +8182,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "60d33b7a-d5d2-4884-9e6d-6365e809bbc9")
-		(property "Reference" "C17"
+		(property "Reference" "C6"
 			(at 237.49 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8229,7 +8246,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "C17")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -8247,7 +8264,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60f2841d-2536-4a9e-a7a7-42d2f75eae00")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR09"
 			(at 87.63 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -8307,7 +8324,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "#PWR025")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -8324,7 +8341,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "61121169-2a56-4bce-9ecc-96397f0d6950")
-		(property "Reference" "C20"
+		(property "Reference" "C4"
 			(at 142.24 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8388,7 +8405,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "C20")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -8406,7 +8423,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6589028c-b677-4ffb-901a-76e676dbcfed")
-		(property "Reference" "R12"
+		(property "Reference" "R4"
 			(at 78.74 50.7999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8470,7 +8487,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "R12")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -8590,7 +8607,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "701fc9d1-d1e7-4dfb-80dc-858f7d31e4fa")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR012"
 			(at 102.87 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -8650,7 +8667,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "#PWR042")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -8668,7 +8685,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "75cb4eb4-7dbe-4c32-91a2-45db924baf37")
-		(property "Reference" "Q2"
+		(property "Reference" "Q1"
 			(at 129.54 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8748,7 +8765,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "Q2")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -8765,7 +8782,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "780c504a-0e57-4249-ad4b-147253d47a49")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR019"
 			(at 224.79 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -8825,7 +8842,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "#PWR020")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -8842,7 +8859,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7b0555ca-0632-4abf-82d6-42efee3c11ca")
-		(property "Reference" "R22"
+		(property "Reference" "R12"
 			(at 252.73 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8904,7 +8921,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "R22")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -8922,7 +8939,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7eefd8ac-60d2-4ba1-bf71-b418d7f22abb")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR08"
 			(at 77.47 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -8982,7 +8999,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "#PWR040")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -9000,7 +9017,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "83b7f3d1-0e82-4ac3-8c25-6badca9640ef")
-		(property "Reference" "R13"
+		(property "Reference" "R5"
 			(at 78.74 60.9599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9064,7 +9081,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "R13")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -9081,7 +9098,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8bebb586-6db9-4727-9a7b-ff4b2e138b09")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR021"
 			(at 246.38 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -9141,7 +9158,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "#PWR019")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -9327,7 +9344,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "91461c71-c2cc-490b-b960-5cba66f0a22c")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR013"
 			(at 143.51 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -9387,7 +9404,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "#PWR036")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -9404,7 +9421,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "97245254-6340-4fc1-9d87-017e6abea75f")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR023"
 			(at 257.81 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -9464,7 +9481,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "#PWR022")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -9560,7 +9577,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9d25b392-28d8-4677-a72a-d845a4eda402")
-		(property "Reference" "U7"
+		(property "Reference" "U4"
 			(at 246.38 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9625,7 +9642,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "U7")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -9723,7 +9740,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a1befc4b-c8cf-4738-8126-eb15a483a5d1")
-		(property "Reference" "C13"
+		(property "Reference" "C3"
 			(at 105.41 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9787,7 +9804,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "C13")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -9805,7 +9822,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a3c95c8f-ee87-4343-92d5-248a314ba4d5")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR01"
 			(at 36.83 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -9865,7 +9882,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "#PWR010")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -9883,7 +9900,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a7347af1-a509-40b3-a5d7-00d6c6179785")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR024"
 			(at 271.78 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -9943,7 +9960,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "#PWR044")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -9961,7 +9978,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "abe76df7-3288-4d01-9dc5-9193ff998b0d")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR018"
 			(at 224.79 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -10021,7 +10038,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "#PWR045")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -10039,7 +10056,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "addab232-5dd9-429a-b05c-a3254fe2a0d9")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR010"
 			(at 92.71 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -10099,7 +10116,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "#PWR041")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -10117,7 +10134,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b4897ba6-684c-44ff-8220-a21c6689ab55")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR017"
 			(at 220.98 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -10177,7 +10194,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "#PWR043")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -10195,7 +10212,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7349c6f-0092-4a91-ad2d-02a83916eabc")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR014"
 			(at 148.59 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -10255,7 +10272,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "#PWR037")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -10272,7 +10289,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bfe90b4e-ce1c-4809-a286-e37ad87994f5")
-		(property "Reference" "R21"
+		(property "Reference" "R13"
 			(at 252.73 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10334,7 +10351,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "R21")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -10352,7 +10369,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d9e7610f-43ff-440a-8f05-26bd3a5a6e26")
-		(property "Reference" "C12"
+		(property "Reference" "C2"
 			(at 91.44 60.9599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10416,7 +10433,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "C12")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -10434,7 +10451,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e0cc10db-eb98-417c-b82c-ab6f7519264c")
-		(property "Reference" "R20"
+		(property "Reference" "R11"
 			(at 241.3 138.4299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10498,7 +10515,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "R20")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -10516,7 +10533,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e364e117-dbca-4825-866c-a0d4f51a7d2e")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR016"
 			(at 171.45 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -10576,7 +10593,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "#PWR047")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -10678,94 +10695,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Comparator:LM397")
-		(at 227.33 144.78 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e4debe93-6088-4437-a2b9-cf551148e33d")
-		(property "Reference" "U8"
-			(at 231.14 137.16 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM397"
-			(at 231.14 139.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 228.6 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm397.pdf"
-			(at 227.33 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Single General-Purpose Voltage Comparator with Open-Collector Output, SOT-23-5"
-			(at 227.33 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e3bc2e9c-0822-4306-8669-b2e7d0ed6ae9")
-		)
-		(pin "3"
-			(uuid "7d558c22-b2b0-46f9-87f1-379ec3fbd4f1")
-		)
-		(pin "2"
-			(uuid "f7c4b95b-f1ba-4abc-b9a4-0e9ad8450d93")
-		)
-		(pin "5"
-			(uuid "4376fcd7-a09b-4c31-af58-cc2ad2007c4c")
-		)
-		(pin "4"
-			(uuid "83f665e6-d1e2-4f04-8478-7aa3a574d895")
-		)
-		(instances
-			(project "Booklight"
-				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "U8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 27.94 48.26 0)
 		(unit 1)
@@ -10858,7 +10787,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5867de1-c4f1-47db-baa6-d216223ffd70")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR015"
 			(at 171.45 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -10918,7 +10847,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "#PWR038")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -10935,7 +10864,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f2f342e9-2dad-4c9c-9ce3-ab3b20aa3e45")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR03"
 			(at 43.18 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -10995,7 +10924,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "#PWR012")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -11012,7 +10941,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f5168534-083f-4893-a923-08b43bdaab3c")
-		(property "Reference" "C18"
+		(property "Reference" "C7"
 			(at 258.064 79.248 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11076,7 +11005,7 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "C18")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -11094,7 +11023,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9ca15af-bace-4f14-9344-219427dff4a9")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR022"
 			(at 257.81 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -11154,7 +11083,97 @@
 		(instances
 			(project "Booklight"
 				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
-					(reference "#PWR046")
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Comparator:TLV7041DBV")
+		(at 227.33 144.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fb350084-9a8f-4dfb-bf93-a5dc1325e647")
+		(property "Reference" "U3"
+			(at 231.14 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TLV7041DBV"
+			(at 231.14 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 227.33 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv7041.pdf"
+			(at 227.33 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "Single, 1.6V-6.5V, 315nA Quiescent, Open-Drain Output, Comparator, North-west pinout, SOT-23-5"
+			(at 227.33 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "89aea5fa-d6c8-4974-a384-18ef1c765e8d")
+		)
+		(pin "4"
+			(uuid "92712cec-c83a-477a-98f3-2b69283ef3f9")
+		)
+		(pin "5"
+			(uuid "10e5e9ff-4143-494f-b7e6-17ada8f38054")
+		)
+		(pin "1"
+			(uuid "97656f56-c541-435f-bbb7-a864752f36ab")
+		)
+		(pin "3"
+			(uuid "d05a97de-783f-4963-b9cd-50a99c8e5ec7")
+		)
+		(instances
+			(project "Booklight"
+				(path "/9ff91894-2fcd-4e81-825f-4481062c5eb5"
+					(reference "U3")
 					(unit 1)
 				)
 			)

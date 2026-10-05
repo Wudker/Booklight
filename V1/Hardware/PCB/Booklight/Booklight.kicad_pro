@@ -62,7 +62,7 @@
       ],
       "drc_exclusions": [
         [
-          "lib_footprint_mismatch|183537500|64125000|dd6b10d7-ad0e-48be-8345-096152f59208|00000000-0000-0000-0000-000000000000",
+          "lib_footprint_mismatch|63737500|58075000|dd6b10d7-ad0e-48be-8345-096152f59208|00000000-0000-0000-0000-000000000000",
           ""
         ]
       ],
@@ -651,7 +651,7 @@
         "uuid": "9ff91894-2fcd-4e81-825f-4481062c5eb5"
       }
     ],
-    "used_designators": "",
+    "used_designators": "U1-4,D1-3,#PWR1-24,C1-8,R1-13,J1,Q1,TP1-4",
     "variants": []
   },
   "sheets": [
